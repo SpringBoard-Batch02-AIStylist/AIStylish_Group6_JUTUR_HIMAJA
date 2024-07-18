@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIStylish Recommendations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            background: linear-gradient(to right, #f7f8f8, #acbb78);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h2 {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            color: #333;
+        }
+        img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4 animate__animated animate__fadeInDown">AIStylish Recommendations</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="text-center mb-3 animate__animated animate__fadeInLeft">Sample Image</h4>
+                <img src="{{ query_image }}" alt="Query Image" class="img-fluid animate__animated animate__zoomIn">
+            </div>
+        </div>
+        <div class="mt-5">
+            <h4 class="text-center animate__animated animate__fadeInRight">Recommendations based on sample image</h4>
+            <img src="{{ plot }}" alt="Similarity plot" class="img-fluid animate__animated animate__zoomIn">
+        </div>
+    </div>
+</body>
+</html>
